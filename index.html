@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxis de CSS</title>
+    <style>
+        h1{color: red; text-align: center; transition: 0.3s ease;}
+        #primerparrafo{color: blue;}
+        .gruposparrafos{color:seagreen}
+        body{background: radial-gradient(rgb(201, 199, 199),rgb(65, 65, 65)); background-attachment: fixed;}
+        input[type="number"]{background: red;}
+        input[type="text"]{background: blue;}
+        h1:hover{color: rgb(255, 217, 4);transform: scale(1.1);}
+        #contenedor p{color:green}
+        #contenedor p:first-child{color: orange;}
+        #contenedor p:last-child{color:rgb(252, 43, 36)}
+        #contenedor p:nth-child(even){color: rgb(0, 255, 234);}
+        /* odd es para impar
+           even para los par
+           un numero es para uno solo en especifico */
+        #contenedor-dos p:nth-child(2){font-family: 'Courier New', Courier, monospace;}
+        #contenedor-dos p:first-child{font-family: 'Times New Roman', Times, serif;}
+        #contenedor-dos p:nth-child(even){color: green;}
+        #contenedor-dos p:nth-child(odd){color:yellow}
+    </style>
+</head>
+<body>
+    
+    <h1>Repaso de la Sintaxis de CSS</h1>
+    <p id="primerparrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit modi assumenda, harum iusto, consequatur voluptas reiciendis dolorum voluptates sed temporibus delectus? Iusto cum neque cumque, cupiditate harum qui sapiente nostrum?</p>
+    <p class="gruposparrafos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aperiam, explicabo minima ex in, aspernatur consequatur fuga earum repellendus eum, labore quis soluta dolore blanditiis aut molestiae excepturi illo fugit!</p>
+    <p class="gruposparrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam distinctio aliquam placeat, provident voluptate itaque amet ex aspernatur, voluptatum porro natus quod autem obcaecati quaerat, necessitatibus magni pariatur velit.</p>
+
+    <input type="text" name="nommbre" id="nombre">
+    <input type="number" name="datos" id="datos">
+    <h1>Selectores avanzados</h1>
+    
+    <div id="contenedor">
+        <p>Estudiante: Fernando Rodriguez García</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis expedita id ipsa illum officiis et optio corporis esse voluptatum voluptatibus assumenda non sunt necessitatibus, hic magnam ab autem cupiditate?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim, exercitationem quas magni quia recusandae culpa optio. Consequatur cum illo aliquid voluptatibus nobis iste aliquam! Excepturi labore amet repudiandae odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum facere labore unde ducimus amet dolore ea architecto possimus, eum, praesentium doloremque porro iste officiis earum, ullam accusantium? Maxime, perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque qui ipsam eos animi magnam, adipisci facere ex repellendus deleniti, vel nihil id sequi, rerum voluptates ducimus dicta aspernatur corrupti.</p>
+        <P>Universidad del Norte</P>
+    </div>
+        <div id="contenedor-dos">
+        <p>Estudiante: Fernando Rodriguez García</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis expedita id ipsa illum officiis et optio corporis esse voluptatum voluptatibus assumenda non sunt necessitatibus, hic magnam ab autem cupiditate?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim, exercitationem quas magni quia recusandae culpa optio. Consequatur cum illo aliquid voluptatibus nobis iste aliquam! Excepturi labore amet repudiandae odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum facere labore unde ducimus amet dolore ea architecto possimus, eum, praesentium doloremque porro iste officiis earum, ullam accusantium? Maxime, perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque qui ipsam eos animi magnam, adipisci facere ex repellendus deleniti, vel nihil id sequi, rerum voluptates ducimus dicta aspernatur corrupti.</p>
+        <P>Universidad del Norte</P>
+    </div>
+</body>
+</html>
